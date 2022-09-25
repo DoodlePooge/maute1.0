@@ -1,14 +1,18 @@
-import { RouteObject } from 'react-router-dom'
+import { createBrowserRouter, RouteObject } from 'react-router-dom'
 import { MainPage } from './pages/MainPage'
 import { Paige } from './pages/Paige'
 import { Bryan } from './pages/Bryan'
 import { MainLayout } from './components/layouts/MainLayout'
 
-const routes: RouteObject[] = [
+const router = createBrowserRouter([
   {
     path: '/',
-    element: <MainPage />,
+    element: <MainLayout />,
     children: [
+      {
+        index: true,
+        element: <MainPage />,
+      },
       {
         path: 'paige',
         element: <Paige />,
@@ -19,6 +23,6 @@ const routes: RouteObject[] = [
       },
     ],
   },
-]
+])
 
-export default routes
+export default router

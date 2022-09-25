@@ -6,6 +6,6 @@ import { theme } from "../theme"
 export const Paige: FC = () => {
   theme.palette.primary.main = "#8B85FF"
   return(
-    <Card sx={{width: 1000, height: 200}}><Button>Hello World</Button></Card>
+    <Card sx={{width: 1000, height: 200}}><Button>Hello Paige</Button></Card>
   )
 }

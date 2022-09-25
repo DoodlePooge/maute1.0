@@ -5,17 +5,17 @@ import { ThemeProvider } from '@mui/material/styles'
 import { theme } from './theme/index'
 import { MainLayout } from './components/layouts/MainLayout'
 import { CssBaseline } from '@mui/material'
-import routes from './routes'
-import { useRoutes } from 'react-router-dom'
+import { RouterProvider } from 'react-router-dom'
+import router from './routes'
 
 
 function App() {
-  const content = useRoutes(routes)
+  // const content = useRoutes(routes)
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <MainLayout />
-      {content}
+      <RouterProvider router={router} />
     </ThemeProvider>
     
   )
