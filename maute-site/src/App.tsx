@@ -1,16 +1,17 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
 import './App.css'
-import { ThemeProvider } from '@mui/material/styles'
-import { theme } from './theme/index'
 import { MainLayout } from './components/layouts/MainLayout'
-import { CssBaseline } from '@mui/material'
+import { createTheme, CssBaseline, ThemeProvider } from '@mui/material'
 import { RouterProvider } from 'react-router-dom'
 import router from './routes'
+import { baseOptions, main, paige, bryan } from './theme'
 
 
-function App() {
-  // const content = useRoutes(routes)
+const App = () => {
+  const pathname = window.location.pathname
+  console.log(pathname)
+  const pathTheme = (pathname == '/paige' ? paige : pathname == '/bryan' ? bryan : main)
+  const theme = createTheme(baseOptions, pathTheme)
+
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />

@@ -1,5 +1,5 @@
-import { Button, Card } from "@mui/material"
-import { FC } from "react"
+import { Button, Card } from '@mui/material'
+import { FC } from 'react'
 
 
 export const MainPage: FC = () => {

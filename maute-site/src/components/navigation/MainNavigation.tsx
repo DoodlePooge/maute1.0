@@ -1,20 +1,15 @@
-import * as React from 'react'
-import AdbIcon from '@mui/icons-material/Adb'
+import { ThemeContext } from '@emotion/react'
 import {
   Box,
   AppBar,
   Toolbar,
   Typography,
-  Container,
-  Button,
+  useTheme,
 } from '@mui/material'
-import { theme } from '../../theme'
-
-const pages = ['Products', 'Pricing', 'Blog']
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout']
+import { useContext } from 'react'
 
 const MainNavigation = () => {
-
+  const theme = useTheme()
   return (
     <AppBar sx={{
       background: theme.palette.primary.main,
@@ -31,7 +26,7 @@ const MainNavigation = () => {
             ml: 2,
             fontFamily: 'monospace',
             fontWeight: 700,
-            ":hover": {
+            ':hover': {
               color: theme.palette.action.hover,
             }
           }}
@@ -48,7 +43,7 @@ const MainNavigation = () => {
             ml: 2,
             fontFamily: 'monospace',
             fontWeight: 700,
-            ":hover": {
+            ':hover': {
               color: theme.palette.action.hover,
             }
           }}
@@ -56,16 +51,16 @@ const MainNavigation = () => {
           PAIGE
         </Typography>
         <Typography
-          variant="h6"
+          variant='h6'
           noWrap
-          component="a"
-          href="/bryan"
+          component='a'
+          href='/bryan'
           color={theme.palette.text.secondary}
           sx={{
             ml: 2,
             fontFamily: 'monospace',
             fontWeight: 700,
-            ":hover": {
+            ':hover': {
               color: theme.palette.action.hover,
             }
           }}

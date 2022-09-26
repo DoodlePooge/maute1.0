@@ -1,10 +1,8 @@
-import { Button, Card } from "@mui/material"
-import { FC } from "react"
-import { theme } from "../theme"
+import { Button, Card } from '@mui/material'
+import { FC } from 'react'
 
 
 export const Paige: FC = () => {
-  theme.palette.primary.main = "#8B85FF"
   return(
     <Card sx={{width: 1000, height: 200}}><Button>Hello Paige</Button></Card>
   )

@@ -1,6 +1,6 @@
-import { createTheme } from '@mui/material/styles'
+import { ThemeOptions } from '@mui/material/styles'
 
-export const theme = createTheme({
+export const baseOptions: ThemeOptions = {
   breakpoints: {
     values: {
       xs: 0,
@@ -19,23 +19,10 @@ export const theme = createTheme({
         default: '#1F1F1F',
         paper: '#0A0A0A',
     },
-    primary: {
-      main: '#B9FF8A',
-      contrastText: '#000000',
-    },
-    secondary: {
-      main: '#57CAFF',
-      contrastText: '#000000',
-    },
     text: {
       primary: '#EEEEEE',
       secondary: '#000000',
       disabled: '#A38EE1',
-    },
-    divider: '#DCA6FF',
-    action: {
-      hover: '#11119977',
-      active: '#ddddff44',
     },
   },
   components: {
@@ -53,4 +40,56 @@ export const theme = createTheme({
       }
     }
   }
-})
+}
+
+export const main = {
+  palette: {
+  primary: {
+    main: '#8B85FF',
+    contrastText: '#000000',
+  },
+  secondary: {
+    main: '#57CAFF',
+    contrastText: '#000000',
+  },
+  divider: '#DCA6FF',
+  action: {
+    hover: '#11119977',
+    active: '#ddddff44',
+  },
+}}
+
+export const paige = {
+  palette: {
+  primary: {
+    main: '#8B85FF',
+    contrastText: '#000000',
+  },
+  secondary: {
+    main: '#57CAFF',
+    contrastText: '#000000',
+  },
+  divider: '#DCA6FF',
+  action: {
+    hover: '#11119977',
+    active: '#ddddff44',
+  },
+}}
+
+export const bryan = {
+  palette: {
+  primary: {
+    main: '#FF6363',
+    contrastText: '#000000',
+  },
+  secondary: {
+    main: '#57CAFF',
+    contrastText: '#000000',
+  },
+  divider: '#DCA6FF',
+  action: {
+    hover: '#11119977',
+    active: '#ddddff44',
+  },
+}
+}
