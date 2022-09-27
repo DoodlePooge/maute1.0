@@ -1,19 +1,18 @@
 import { Box, Card, Slide, Typography, List } from "@mui/material"
 import { FC } from "react"
 
-type expInfo = {
+type prInfo = {
   title: string,
-  company: string,
+  role: string,
   timeline: string,
-  location: string,
   responsibilities: string[],
 }
 
 interface props {
-  information: expInfo[],
+  information: prInfo[],
 }
 
-export const WorkExperience: FC<props> = (props) => {
+export const Projects: FC<props> = (props) => {
   const { information } =  props
   return (
     <Slide direction="up" in timeout={1500}>
@@ -22,15 +21,15 @@ export const WorkExperience: FC<props> = (props) => {
         <Typography variant="h3" sx={{
           fontWeight: 600,
           borderBottom: 1,
-          }}>Work Experience</Typography>
-          {information.map((info: expInfo) => (
+          }}>Projects</Typography>
+          {information.map((info: prInfo) => (
             <Box sx={{m: 3}}>
             <Typography variant="h5" sx={{fontWeight: 600}}>{info.title}</Typography>
-            <Typography color="primary" variant="h6" sx={{fontWeight: 600}}>{info.company} - {info.location}</Typography>
+            <Typography color="primary" variant="h6" sx={{fontWeight: 600}}>{info.role}</Typography>
             <Typography variant="body2">{info.timeline}</Typography>
             {info.responsibilities.map((task: string) => (
               <List sx={{ pl: 3, listStyleType: 'disc' }}>
-                <Typography variant="body2" sx={{p: 0, m: 0, display: 'list-item'}}>{task}</Typography>
+                <Typography variant="body2" sx={{display: 'list-item'}}>{task}</Typography>
               </List>
             ))}
             </Box>

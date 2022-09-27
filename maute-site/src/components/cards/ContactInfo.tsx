@@ -30,10 +30,10 @@ export const ContactInfo: FC<props> = (props) => {
     copy(info.phone)
   }
   return (
-    <Slide direction="up" in={true} timeout={1000}>
-      <Card>
+    <Slide direction="up" in timeout={1500}>
+      <Card sx={{mb: 3}}>
         <Box sx={{m: 2}}>
-        <Typography variant="h5" sx={{fontWeight: 500}}>Contact Information</Typography>
+        <Typography variant="h5" sx={{fontWeight: 600}}>Contact Information</Typography>
         <Typography>
           <IconButton color="primary"onClick={copyEmail}>
           <EmailIcon/>
@@ -52,7 +52,7 @@ export const ContactInfo: FC<props> = (props) => {
           </Link>
           {info.location?.text}
         </Typography>
-        <Typography>
+        <Typography hidden={!info.github}>
           <Link href={info.github?.link}>
           <IconButton color="primary"><GitHubIcon/></IconButton>
           </Link>

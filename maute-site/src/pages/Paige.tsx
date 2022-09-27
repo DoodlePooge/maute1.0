@@ -1,6 +1,8 @@
-import { Button, Card, Grid } from '@mui/material'
+import { Avatar, Grid, Slide } from '@mui/material'
 import { FC } from 'react'
 import { ContactInfo } from '../components/cards/ContactInfo'
+import { Education } from '../components/cards/Education'
+import { Projects } from '../components/cards/Projects'
 import { WorkExperience } from '../components/cards/WorkExperience'
 
 const contact = {
@@ -53,14 +55,52 @@ const experience = [
   },
 ]
 
+const education = [{
+  degree: "Computer Science (B.S.)",
+  minor: "Mathematics",
+  school: "East Stroudsburg University",
+  timeline: "MAY 2023",
+  gpa: "3.0"
+}]
+
+const projects = [
+  {
+    title: "This Website :)",
+    role: "Developer",
+    timeline: "SEPT 2022 - PRESENT",
+    responsibilities: [
+      "Created react app with typescript and material ui",
+    ],
+  },
+  {
+    title: "CSO Website (esucso.org)",
+    role: "Team Leader and Developer",
+    timeline: "JAN 2021 - MAY 2022",
+    responsibilities: [
+      "Create and develop content for the site",
+      "Distribute work to other members",
+      "Created documentation for the setup and tips",
+      "Utilize GitHub to manage issues and bugs",      
+    ],
+  },
+]
+
 export const Paige: FC = () => {
   return(
     <Grid container spacing={3}>
       <Grid item xs={12} md={4}>
+        <Slide direction='up' in timeout={1000}>
+          <Avatar
+          src="../../public/static/images/rosie.jpg"
+          sx={{  m: 2, width: 300, height: 300 }}
+          />
+        </Slide>
         <ContactInfo info={contact} />
+        <Education information={education} />
       </Grid>
       <Grid item xs={12} md={8}>
         <WorkExperience information={experience} />
+        <Projects information={projects} />
       </Grid>
     </Grid>
   )
