@@ -91,7 +91,7 @@ export const Megan: FC = () => {
       <Grid item xs={12} md={4}>
         <Slide direction='up' in timeout={1000}>
           <Avatar
-          src="../../public/static/images/megan.jpg"
+          src="/static/images/megan.jpg"
           sx={{  m: 2, width: 300, height: 300 }}
           />
         </Slide>

@@ -88,7 +88,7 @@ export const Bryan: FC = () => {
       <Grid item xs={12} md={4}>
         <Slide direction='up' in timeout={1000}>
           <Avatar
-          src="../../public/static/images/bryan.jpg"
+          src="/static/images/bryan.jpg"
           sx={{  m: 2, width: 300, height: 300 }}
           />
         </Slide>
