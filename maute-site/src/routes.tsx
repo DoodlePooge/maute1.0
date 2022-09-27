@@ -3,6 +3,8 @@ import { MainPage } from './pages/MainPage'
 import { Paige } from './pages/Paige'
 import { Bryan } from './pages/Bryan'
 import { MainLayout } from './components/layouts/MainLayout'
+import { Emily } from './pages/Emily'
+import { Megan } from './pages/Megan'
 
 const router = createBrowserRouter([
   {
@@ -20,6 +22,14 @@ const router = createBrowserRouter([
       {
         path: 'bryan',
         element: <Bryan />,
+      },
+      {
+        path: 'emily',
+        element: <Emily />,
+      },
+      {
+        path: 'megan',
+        element: <Megan />,
       },
     ],
   },

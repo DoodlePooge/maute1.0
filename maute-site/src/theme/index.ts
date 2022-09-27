@@ -10,6 +10,12 @@ export const baseOptions: ThemeOptions = {
       xl: 1536,
     },
   },
+  typography: {
+    fontFamily: [
+      '"Montserrat"',
+      'sans-serif'
+    ].join(','),
+  },
   shape: {
     borderRadius: 4,
   },
@@ -22,7 +28,11 @@ export const baseOptions: ThemeOptions = {
     text: {
       primary: '#EEEEEE',
       secondary: '#000000',
-      disabled: '#A38EE1',
+      disabled: '#999999',
+    },
+    action: {
+      hover: '#111111AA',
+      active: '#DDDDDD44',
     },
   },
   components: {
@@ -38,6 +48,11 @@ export const baseOptions: ThemeOptions = {
       defaultProps: {
         variant: 'contained',
       }
+    },
+    MuiTypography: {
+      defaultProps: {
+        textAlign: 'left',
+      }
     }
   }
 }
@@ -45,7 +60,7 @@ export const baseOptions: ThemeOptions = {
 export const main = {
   palette: {
   primary: {
-    main: '#8B85FF',
+    main: '#8AFF95',
     contrastText: '#000000',
   },
   secondary: {
@@ -53,10 +68,6 @@ export const main = {
     contrastText: '#000000',
   },
   divider: '#DCA6FF',
-  action: {
-    hover: '#11119977',
-    active: '#ddddff44',
-  },
 }}
 
 export const paige = {
@@ -70,10 +81,6 @@ export const paige = {
     contrastText: '#000000',
   },
   divider: '#DCA6FF',
-  action: {
-    hover: '#11119977',
-    active: '#ddddff44',
-  },
 }}
 
 export const bryan = {
@@ -87,9 +94,33 @@ export const bryan = {
     contrastText: '#000000',
   },
   divider: '#DCA6FF',
-  action: {
-    hover: '#11119977',
-    active: '#ddddff44',
+}
+}
+
+export const emily = {
+  palette: {
+  primary: {
+    main: '#8DFFF0',
+    contrastText: '#000000',
   },
+  secondary: {
+    main: '#57CAFF',
+    contrastText: '#000000',
+  },
+  divider: '#DCA6FF',
+}
+}
+
+export const megan = {
+  palette: {
+  primary: {
+    main: '#FF9DE0',
+    contrastText: '#000000',
+  },
+  secondary: {
+    main: '#57CAFF',
+    contrastText: '#000000',
+  },
+  divider: '#DCA6FF',
 }
 }

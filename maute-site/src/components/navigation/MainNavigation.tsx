@@ -13,7 +13,7 @@ const MainNavigation = () => {
   return (
     <AppBar sx={{
       background: theme.palette.primary.main,
-      p: 1,
+      pl: 2,
     }}>
       <Toolbar disableGutters>
         <Typography
@@ -23,8 +23,7 @@ const MainNavigation = () => {
           href="/"
           color={theme.palette.text.secondary}
           sx={{
-            ml: 2,
-            fontFamily: 'monospace',
+            m: 2,
             fontWeight: 700,
             ':hover': {
               color: theme.palette.action.hover,
@@ -40,8 +39,7 @@ const MainNavigation = () => {
           href="/paige"
           color={theme.palette.text.secondary}
           sx={{
-            ml: 2,
-            fontFamily: 'monospace',
+            m: 2,
             fontWeight: 700,
             ':hover': {
               color: theme.palette.action.hover,
@@ -57,8 +55,7 @@ const MainNavigation = () => {
           href='/bryan'
           color={theme.palette.text.secondary}
           sx={{
-            ml: 2,
-            fontFamily: 'monospace',
+            m: 2,
             fontWeight: 700,
             ':hover': {
               color: theme.palette.action.hover,
@@ -66,6 +63,38 @@ const MainNavigation = () => {
           }}
         >
           BRYAN
+        </Typography>
+        <Typography
+          variant='h6'
+          noWrap
+          component='a'
+          href='/emily'
+          color={theme.palette.text.secondary}
+          sx={{
+            m: 2,
+            fontWeight: 700,
+            ':hover': {
+              color: theme.palette.action.hover,
+            }
+          }}
+        >
+          EMILY
+        </Typography>
+        <Typography
+          variant='h6'
+          noWrap
+          component='a'
+          href='/megan'
+          color={theme.palette.text.secondary}
+          sx={{
+            m: 2,
+            fontWeight: 700,
+            ':hover': {
+              color: theme.palette.action.hover,
+            }
+          }}
+        >
+          MEGAN
         </Typography>
       </Toolbar>
     </AppBar>

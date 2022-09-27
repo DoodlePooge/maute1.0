@@ -1,7 +1,6 @@
-import { Button, Card } from "@mui/material"
+import { Button, Card, Slide } from "@mui/material"
 import { experimentalStyled, styled } from "@mui/material/styles"
 import { Outlet, RouterProvider } from "react-router-dom"
-import router from "../../routes"
 import MainNavigation from "../navigation/MainNavigation"
 
 const MainLayoutRoot = styled('div')(({ theme }) => ({
@@ -11,7 +10,6 @@ const MainLayoutRoot = styled('div')(({ theme }) => ({
 }))
 
 export const MainLayout = () => {
-  console.log("hai")
   return(
     <MainLayoutRoot>
       <MainNavigation />
