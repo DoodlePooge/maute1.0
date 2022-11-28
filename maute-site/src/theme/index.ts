@@ -60,7 +60,7 @@ export const baseOptions: ThemeOptions = {
 export const main = {
   palette: {
   primary: {
-    main: '#8AFF95',
+    main: '#8AFFBD',
     contrastText: '#000000',
   },
   secondary: {
