@@ -23,14 +23,14 @@ const router = createBrowserRouter([
         path: 'bryan',
         element: <Bryan />,
       },
-      {
-        path: 'emily',
-        element: <Emily />,
-      },
-      {
-        path: 'megan',
-        element: <Megan />,
-      },
+      // {
+      //   path: 'emily',
+      //   element: <Emily />,
+      // },
+      // {
+      //   path: 'megan',
+      //   element: <Megan />,
+      // },
     ],
   },
 ])

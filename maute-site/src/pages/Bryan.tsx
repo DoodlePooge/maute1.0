@@ -60,35 +60,13 @@ const education = [
 },
 ]
 
-const projects = [
-  {
-    title: "This Website :)",
-    role: "Developer",
-    timeline: "SEPT 2022 - PRESENT",
-    responsibilities: [
-      "Created react app with typescript and material ui",
-    ],
-  },
-  {
-    title: "CSO Website (esucso.org)",
-    role: "Team Leader and Developer",
-    timeline: "JAN 2021 - MAY 2022",
-    responsibilities: [
-      "Create and develop content for the site",
-      "Distribute work to other members",
-      "Created documentation for the setup and tips",
-      "Utilize GitHub to manage issues and bugs",      
-    ],
-  },
-]
-
 export const Bryan: FC = () => {
   return(
     <Grid container spacing={3}>
       <Grid item xs={12} md={4}>
         <Slide direction='up' in timeout={1000}>
           <Avatar
-          src="/static/images/bryan.jpg"
+          src="/static/images/bryan.png"
           sx={{  m: 2, width: 300, height: 300 }}
           />
         </Slide>
@@ -97,7 +75,6 @@ export const Bryan: FC = () => {
       </Grid>
       <Grid item xs={12} md={8}>
         <WorkExperience information={experience} />
-        <Projects information={projects} />
       </Grid>
     </Grid>
   )
