@@ -18,7 +18,7 @@ export const Skills: FC<props> = (props) => {
         <Box sx={{m: 2}}>
           <Typography variant="h5" sx={{fontWeight: 600}}>Skills</Typography>
           {information.map((skl: skillsInfo) => (
-            <Box sx={{mb: 2}}>
+            <Box sx={{pl:2, mb: 2}}>
               <Typography variant="h6" color="primary">{skl.group}</Typography>
               {skl.items.map((skill: string) => (
                 <Typography>{skill}</Typography>
