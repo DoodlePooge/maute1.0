@@ -3,6 +3,7 @@ import { FC } from 'react'
 import { ContactInfo } from '../components/cards/ContactInfo'
 import { Education } from '../components/cards/Education'
 import { Projects } from '../components/cards/Projects'
+import { Skills } from '../components/cards/Skills'
 import { WorkExperience } from '../components/cards/WorkExperience'
 
 const contact = {
@@ -73,6 +74,17 @@ const projects = [
     ],
   },
   {
+    title: "github.com/obscuritylabs/darkmoon",
+    role: "Project Co-Lead",
+    timeline: "JULY 2022 - AUG 2022",
+    responsibilities: [
+      "Planned out the end goal, sprints, and tickets",
+      "Guided the team of interns through the environment",
+      "Ran daily meetings to keep us on the right track",
+      "Completed the end goal and presented the work to the Commonwealth Cyber Initiative",
+    ],
+  },
+  {
     title: "CSO Website (esucso.org)",
     role: "Team Leader and Developer",
     timeline: "JAN 2021 - MAY 2022",
@@ -82,6 +94,27 @@ const projects = [
       "Created documentation for the setup and tips",
       "Utilize GitHub to manage issues and bugs",      
     ],
+  },
+]
+
+const skills = [
+  {
+    group: "Programming Languages",
+    items: [
+      "Javascript",
+      "Typescript",
+      "Python",
+      "Powershell Scripting",
+      "SQL",
+    ]
+  },
+  {
+    group: "Frameworks",
+    items: [
+      "Django",
+      "FastAPI",
+      "React",
+    ]
   },
 ]
 
@@ -97,6 +130,7 @@ export const Paige: FC = () => {
         </Slide>
         <ContactInfo info={contact} />
         <Education information={education} />
+        <Skills information={skills} />
       </Grid>
       <Grid item xs={12} md={8}>
         <WorkExperience information={experience} />

@@ -3,6 +3,7 @@ import { FC } from 'react'
 import { ContactInfo } from '../components/cards/ContactInfo'
 import { Education } from '../components/cards/Education'
 import { Projects } from '../components/cards/Projects'
+import { Skills } from '../components/cards/Skills'
 import { WorkExperience } from '../components/cards/WorkExperience'
 
 const contact = {
@@ -24,6 +25,19 @@ const experience = [
       "Created spreadsheet containing venue information for future events",
       "Interviewed business owners about their experience as a member of The Pocono Chamber",
       
+    ],
+  },
+  {
+    title: "Studio Crew",
+    company: "East Stroudsburg University Media Production Club",
+    timeline: "SEPT 2022 - MAY 2022",
+    location: "Stroudsburg, PA",
+    responsibilities: [
+      "Assisted ESU's McGarry Communications Center studio",
+      "Operated cameras to make sure they are in focus and in position to the director's liking",
+      "Assist in designing sets in the studio to create the setting of a scene",
+      "Directed, produced, and written class projects utilizing the studio tools",
+      "Played acting roles in multiple productions",
     ],
   },
   {
@@ -60,6 +74,34 @@ const education = [
 },
 ]
 
+const skills = [
+  {
+    group: "Office Tools",
+    items: [
+      "Adobe Photoshop",
+      "Adobe Premiere",
+      "Final Cut Pro",
+      "Open Broadcasting Software",
+    ],
+  },
+  {
+    group: "Social Media",
+    items: [
+      "Twitter",
+      "Instagram",
+      "Youtube",
+    ],
+  },
+  {
+    group: "Web Design",
+    items: [
+      "HTML5",
+      "CSS3",
+      "Adobe Dreamweaver",
+    ],
+  },
+]
+
 export const Bryan: FC = () => {
   return(
     <Grid container spacing={3}>
@@ -72,6 +114,7 @@ export const Bryan: FC = () => {
         </Slide>
         <ContactInfo info={contact} />
         <Education information={education} />
+        <Skills information={skills} />
       </Grid>
       <Grid item xs={12} md={8}>
         <WorkExperience information={experience} />
